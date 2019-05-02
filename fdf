@@ -1,0 +1,24 @@
+/*void RTC_IRQHandler(void)
+{   
+	if (RTC->RIIR.TIF == 0x1)      		        /* tick interrupt occurred */
+	{
+        outpw(&RTC->RIIR, 0x2);  
+       
+        g_u32RTC_Count++;                       /* maintain RTC tick count */
+        
+        if (g_pfnRTCCallBack_Tick != NULL)      /* execute tick callback function */
+        {
+            g_pfnRTCCallBack_Tick();
+        }
+    }
+
+    if (RTC->RIIR.AIF == 0x1)                   /* alarm interrupt occurred */
+    {
+        outpw(&RTC->RIIR, 0x1);  
+        
+        if (g_pfnRTCCallBack_Alarm != NULL)     /* execute alarm callback function */
+        {
+            g_pfnRTCCallBack_Alarm();
+        }
+    }
+}*/
